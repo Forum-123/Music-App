@@ -27,7 +27,7 @@ export const LikesCount = () => {
             <button
                 onClick={count}
                 role="switch"
-                style={{ backgroundColor: liked ? '#79B4B7' : 'grey' }}
+                style={{ backgroundColor: liked ? '#79B4B7' : '#9D9D9D' }}
             >Like!</button>
             <p id="likePhrase">Number of likes: <span role="figure" id="likes">{likesCount}</span></p>
         </div>
