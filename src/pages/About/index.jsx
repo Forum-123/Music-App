@@ -1,11 +1,15 @@
 import React from "react";
+import { useSelector } from 'react-redux';
 import './style.css'
 
 export const About = () => {
+    const name = useSelector((store) => store.name);
+    const favGenres = useSelector((store) => store.genres);
+
     return (
         <div className="information">
             <h1>Billie Eilish</h1>
-            <h3>Genre: Alternative/Indie</h3><br />
+            <h3>{name} writes and sings {favGenres[0]}/{favGenres[1]} type of music</h3>
             <ul>
                 <li>An American singer and songwriter. She is best known for her successful debut single, Ocean Eyes.</li>
                 <li>She was born and raised in Los Angeles, California. </li>
